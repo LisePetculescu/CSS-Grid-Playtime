@@ -9,22 +9,30 @@ h1 {
 
 .grid-container {
   display: grid;
+
+  /* disse to virker ikke med fr */
+  /* justify-content: center; */
+  /* align-content: space-around; */
+
   /* grid-template-columns: 33.33% 33.33% 33.33%; */
   grid-template-columns: 1fr;
   /* grid-template-rows: 30vh 30vh 30vh 30vh 30vh 30vh; */
-  grid-auto-rows: 30vh;
+  grid-auto-rows: 10vh;
   gap: 20px;
 }
 .grid-container article {
   background-color: plum;
 }
+/* @media gør at du kan justere alt efter hvor stor "skærmen" er */
 @media (min-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 20vh;
   }
 }
 @media (min-width: 1200px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 30vh;
   }
 }
