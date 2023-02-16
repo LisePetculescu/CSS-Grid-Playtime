@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 h1 {
-  background-color: aquamarine;
+  background-color: rgb(70, 243, 185);
 }
 
 .grid-container {
@@ -19,9 +19,10 @@ h1 {
   /* grid-template-rows: 30vh 30vh 30vh 30vh 30vh 30vh; */
   grid-auto-rows: 10vh;
   gap: 20px;
+  background-color: blue;
 }
 .grid-container article {
-  background-color: plum;
+  background-color: rgb(197, 130, 197);
 }
 /* @media gør at du kan justere alt efter hvor stor "skærmen" er */
 @media (min-width: 600px) {
